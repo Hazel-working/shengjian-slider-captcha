@@ -1,0 +1,16 @@
+{
+  "name": "shengjian-slider-captcha",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tampermonkey userscript that solves the AJ-Captcha slider puzzle on the Shengjian ERP login pages.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/matcher.test.mjs",
+    "test:browser": "node --test test/browser.test.mjs",
+    "make:icon": "node scripts/make-icon.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.65.0"
+  }
+}

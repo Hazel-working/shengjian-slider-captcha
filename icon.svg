@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <filter id="wobble" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.045 0.07" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.85" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#wobble)">
+    <path d="M9.6 7.3 C19.8 5.5 33.2 6.6 45.4 5.9 C53.6 5.5 58.2 8.9 59 16.5 C59.9 26.4 59.4 37.1 58.9 45.7 C58.5 53 54 58 46.5 58.4 C35.9 59 23.7 58.7 15.3 58.3 C8.2 58 4.8 52.8 4.6 45.4 C4.3 35.4 4.8 24.5 5.2 16.1 C5.5 9.8 6.6 7.7 9.6 7.3 Z"
+          fill="#F6EFE0" stroke="#2B2B2B" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M13.2 44.6 C19.5 43.7 26.7 45 33.2 44.3 C36.2 43.9 38.6 44.2 40.6 44.1"
+          fill="none" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="44.2" cy="44" r="7.1" fill="#E2703A" stroke="#2B2B2B" stroke-width="2.1"/>
+    <path d="M31.4 52.4 C34.2 51.9 36.8 52.5 39.3 52.1"
+          fill="none" stroke="#2B2B2B" stroke-width="1.5" stroke-linecap="round" opacity="0.45"/>
+    <path d="M17 23.6 C19.6 26.1 21.9 29 24.4 32 C29.3 25.2 34.6 19.2 41.2 13.8"
+          fill="none" stroke="#002FA7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
